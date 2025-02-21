@@ -12,14 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginRegistrationDemo"
         tools:targetApi="31">
+
+        <activity
+            android:name=".AutoBackground"
+            android:exported="false" />
         <activity
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".IntroActivity"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".AutoBackground"
+            android:name=".IntroActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,9 +32,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ShowData"
-            android:exported="true" />
     </application>
 
 </manifest>
